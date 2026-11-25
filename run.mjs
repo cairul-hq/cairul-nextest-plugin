@@ -1,5 +1,5 @@
 import { stripVTControlCharacters } from 'node:util';
-import { counts, list, option, repeat, selectors, stdout, value } from '@cairul/plugin-kit/runner';
+import { counts, list, option, repeat, selectors, stdout, value } from '@cairul/pdk/runner';
 
 function summarize(output) {
   const summary = [...stripVTControlCharacters(output).matchAll(/\d+ tests? run:\s*([^\r\n]+)/g)].at(-1);
